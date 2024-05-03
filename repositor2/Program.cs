@@ -22,7 +22,8 @@ namespace repositor2
         Monday,
         Wednesday,
         Friday,
-        sunday
+        
+   
     }
 }
 

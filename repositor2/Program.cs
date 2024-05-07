@@ -10,7 +10,7 @@ class HelloWorld
     {
         Console.Write("Введите имя: ");
         var name = Console.ReadLine();
-        Console.Write("Введите возраст: ");
+        Console.Write("Ввведите возраст: ");
        
 
 

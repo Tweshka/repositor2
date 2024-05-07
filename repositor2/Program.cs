@@ -1,29 +1,28 @@
 ﻿using System;
+using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace repositor2
-
+class HelloWorld
 {
-    internal class Program;
-    class MainClass
+
+
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            DaysOfWeek MyFavoriteDay;
+        Console.Write("Введите имя: ");
+        var name = Console.ReadLine();
+        Console.Write("Введите возраст: ");
+       
 
-            MyFavoriteDay = DaysOfWeek.sunday;
 
-            Console.WriteLine(MyFavoriteDay);
-        }
-    }
-
-    enum DaysOfWeek : byte
-    {
-        Tuesday,
-        Monday,
-        Wednesday,
-        Friday,
+        var age = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Тебя зовут {0} Твой возраст {1} ", name, age);
+        Console.Write("Введите дату рождения: ");
+        var birthdate = Console.ReadLine();
+        Console.WriteLine("Твоя дата рождения{0}" ,birthdate);
         
-   
+
+
+
     }
 }
 

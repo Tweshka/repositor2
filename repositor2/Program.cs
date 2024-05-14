@@ -8,21 +8,34 @@ class HelloWorld
 
     public static void Main(string[] args)
     {
-        Console.Write("Введите имя: ");
-        var name = Console.ReadLine();
-        Console.Write("Ввведите возраст: ");
-       
+        Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
+
+        var color = Console.ReadLine();
+
+        if (color == "red")
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine("Your color is red!");
+        }
+
+        else if (color == "green")
+        {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine("Your color is green!");
+        }
+        else
+        {
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine("Your color is cyan!");
 
 
-        var age = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Тебя зовут {0} Твой возраст {1} ", name, age);
-        Console.Write("Введите дату рождения: ");
-        var birthdate = Console.ReadLine();
-        Console.WriteLine("Твоя дата рождения{0}" ,birthdate);
-        
-
-
-
+        }
     }
 }
 
